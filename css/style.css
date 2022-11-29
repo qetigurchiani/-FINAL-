@@ -1,0 +1,83 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: blueviolet;
+    color: yellow;
+}
+
+nav .mainmenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainmenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-transform: uppercase;
+    color: yellow;
+}
+
+nav .mainmenu li a:hover{
+    background: rgba(152, 9, 208, 0.596) ;
+}
+
+nav .openmenu{
+    margin: 20px;
+    display:none;
+    cursor: pointer;
+}
+
+nav .mainmenu .closemenu, .icons i {
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {color: rgb(0, 17, 255);}
+.fa-twitter:hover {color: rgb(0, 183, 255);}
+.fa-instagram:hover {color: rgb(255, 0, 162);}
+.fa-whatsapp:hover {color: rgb(0, 255, 72);}
+
+nav .logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    nav .mainmenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: blueviolet;
+        transition: top 2s ease-in;
+        display: none;
+    }
+    nav .mainmenu .closemenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openmenu {
+        display: block ;
+    }
+    nav .mainmenu li a:hover{
+        background: none ;
+        color: red;
+    }
+
+    .icons i {
+      display: inline-block;
+      padding: 12px;  
+    }
+}
+
+
