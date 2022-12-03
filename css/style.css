@@ -1,3 +1,10 @@
+/* navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 nav{
     display: flex;
     align-items: center;
@@ -52,6 +59,7 @@ nav .logo{
         top: 0;
         right: 0;
         left: 0;
+        z-index: 10 ;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -80,4 +88,119 @@ nav .logo{
     }
 }
 
+.scroll{
+    background-color: rgb(217, 0, 255) ;
+}
 
+/* section1 */
+
+.section1{
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 170px ;
+ 
+}
+.left-block{
+    width: 400px;
+}
+.section1-h2{
+    font-size: 35px;
+    color: blueviolet;
+   /* font-family: ; */
+}
+.section1-p{
+    margin-top: 40px;
+    /* font-family: ; */
+}
+
+.right-block{
+    background-image: url("../images/cake.jpg");
+    width: 500px;
+    height: 600px;
+    background-position: center ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-left: 370px;
+    border-radius: 0% 100% 0% 100% / 80% 25% 75% 20% ;
+}
+
+/* section2 */
+.section2 {
+    margin: 0 auto;
+    max-width: 100%;
+    background-image: url('../images/bg-image.jpg');
+    margin-top: 90px;
+    padding: 93px 139px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section2 h4{
+    font-size: 20px;
+    color: #5863F8;
+    font-family: 'Poppins';
+}
+.section2 h2{
+    font-size: 35px;
+    line-height: 1.5;
+    width: 500px;
+    color: white;
+    margin-bottom: 38px;
+    font-family: 'Poppins';
+}
+.container-box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1088px;
+    margin: 0 auto;
+}
+.info-box {
+    width: 260px;
+    height: 300px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 26px 19px;
+}
+
+
+.info-box p {
+    width: 221px;
+    height: 62px;
+    overflow: hidden;
+    text-overflow: clip;
+    font-size: 14px;
+    text-align: center;
+    color: #B1B1B1;
+    font-family: 'Poppins';
+}
+.info-box h2 {
+    width: 160px;
+    height: 48;
+    color: black;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+/* slider */
+.swiper {
+    width: 1000px;
+    height: 600px;
+  }
+  .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+  }
+  .swiper h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+
+  }
