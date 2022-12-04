@@ -11,7 +11,6 @@ nav{
     justify-content: space-between;
     padding: 10px 25px;
     background: blueviolet;
-    color: yellow;
 }
 
 nav .mainmenu {
@@ -20,15 +19,22 @@ nav .mainmenu {
 }
 
 nav .mainmenu li a{
-    display: inline-block;
+    display: inline-flex;
     padding: 15px;
     text-transform: uppercase;
     color: yellow;
 }
 
-nav .mainmenu li a:hover{
-    background: rgba(152, 9, 208, 0.596) ;
+
+.mainmenu :nth-child(even) :hover{
+    background: #C45AEC ;
+
 }
+
+.mainmenu :nth-child(odd) :hover{
+    background: #D462FF ;
+}
+
 
 nav .openmenu{
     margin: 20px;
@@ -48,44 +54,12 @@ nav .mainmenu .closemenu, .icons i {
 
 nav .logo{
     margin: 6px;
-    font-size: 25px;
     cursor: pointer;
 }
 
-@media(max-width: 800px){
-    nav .mainmenu{
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10 ;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: blueviolet;
-        transition: top 2s ease-in;
-        display: none;
-    }
-    nav .mainmenu .closemenu{
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-
-    }
-    nav .openmenu {
-        display: block ;
-    }
-    nav .mainmenu li a:hover{
-        background: none ;
-        color: red;
-    }
-
-    .icons i {
-      display: inline-block;
-      padding: 12px;  
-    }
+.logo img{
+    width: 50px;
+    filter: invert(85%) sepia(41%) saturate(1134%) hue-rotate(5deg) brightness(109%) contrast(111%);
 }
 
 .scroll{
@@ -116,79 +90,85 @@ nav .logo{
 
 .right-block{
     background-image: url("../images/cake.jpg");
-    width: 500px;
+    width: 45%;
     height: 600px;
-    background-position: center ;
     background-size:cover;
     background-repeat: no-repeat;
-    margin-left: 370px;
+    margin-left: 300px;
     border-radius: 0% 100% 0% 100% / 80% 25% 75% 20% ;
 }
 
 /* section2 */
-.section2 {
-    margin: 0 auto;
-    max-width: 100%;
+.bg-image {
     background-image: url('../images/bg-image.jpg');
-    margin-top: 90px;
-    padding: 93px 139px;
+    width: 100%;
+    display: flex;
+    height: 620px;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
-.section2 h4{
-    font-size: 20px;
-    color: #5863F8;
-    font-family: 'Poppins';
+.bg-image::before {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(147, 106, 186);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 40%;
 }
-.section2 h2{
-    font-size: 35px;
-    line-height: 1.5;
-    width: 500px;
-    color: white;
-    margin-bottom: 38px;
-    font-family: 'Poppins';
+.container {
+    max-width: 1088px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 92px;
 }
-.container-box {
+.block-box {
     display: flex;
     justify-content: space-between;
-    max-width: 1088px;
-    margin: 0 auto;
+    flex-wrap: wrap;
 }
-.info-box {
-    width: 260px;
-    height: 300px;
-    background-color: #FFFFFF;
+.box {
+    width: 24%;
+    height: 260px;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 26px 19px;
 }
-
-
-.info-box p {
+.blue-box {
+    width: 59px;
+    height: 58px;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box p {
     width: 221px;
-    height: 62px;
-    overflow: hidden;
-    text-overflow: clip;
-    font-size: 14px;
     text-align: center;
-    color: #B1B1B1;
-    font-family: 'Poppins';
+    font-size:  0.875rem;
 }
-.info-box h2 {
-    width: 160px;
-    height: 48;
-    color: black;
-    font-size: 18px;
-    margin-top: 15px;
-    text-align: center;
-    font-family: 'Poppins';
+.text-block h3 {
+    text-align: left;
+    color: blue;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
-/* slider */
+.text-block p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
 
-
+/* slider - section3 */
 .section3{
     width: 98%;
     height: 600px;
@@ -197,6 +177,7 @@ nav .logo{
     align-items: center;
     overflow-x: auto;
 }
+
 .section3::-webkit-scrollbar{
     display: none;
 }
@@ -246,19 +227,6 @@ nav .logo{
     color: white;
 }
 
-@media (max-width: 768px) {
-
-    .section3 .product {
-        min-width: 49%;
-        margin:  0 10px  0 0;
-    }
-    .detail, .button{
-        font-size: 16px;
-    }
-    .section3 a{
-        padding: 6px 10px;
-    }
-}
 
 .forw-backw{
     text-align: center;
@@ -267,11 +235,84 @@ nav .logo{
     font-size: 30px;
 }
 
+.forw-backw h3{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color:#cc66ff;
+    font-size: 40px;
+}
+
+
 .button a {
     background-color: #cc66ff;
 }
 
 
+/* registration + validation */
 
+.error-text {
+    color:red;
+    display: block;
+}
+
+#usernameField{
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+}
+    
+
+#passwordField{
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+}
+
+#passwordFieldrepeat{
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+}
+
+#text{
+    display: block;
+}
+#emailField{
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+}
+.submitForm{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: blueviolet;
+    color: yellow;
+    border-color: rgb(92, 16, 163);
+    cursor: pointer;
+}
+
+.registration-text{
+    text-align:center;
+    background-color: #cc99ff;
+    width:100%;
+    height: 400px;
+    }
+
+.registration-text h4{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: yellow;
+    font-family: 'Poppins';
+}
+.registration-text h2{
+    font-size: 25px;
+    text-align: center;
+    color: yellow;
+  
+   
+}
 
 

@@ -1,0 +1,84 @@
+/* navbar */
+@media(max-width: 1024px){
+    nav .mainmenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10 ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: blueviolet;
+        transition: top 2s ease-in;
+        display: none;
+    }
+    nav .mainmenu .closemenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openmenu {
+        display: block ;
+    }
+    nav .mainmenu li a:hover{
+        background: none ;
+        color: red;
+    }
+
+    .icons i {
+      display: inline-block;
+      padding: 12px;  
+    }
+}
+
+/* section1 */
+
+
+
+/* section2 */
+@media (max-width:1024px) {
+    .bg-image {
+        height: auto;
+        padding-bottom: 90px;
+    }
+    .box {
+        width: 48%;
+    }
+    .box:nth-child(1),.box:nth-child(2) {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+}
+@media (max-width:520px) {
+    .box {
+        width: 100%;
+    }
+    .box:nth-child(3) {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* section 3 */
+
+@media (max-width: 1024px) {
+
+    .section3 .product {
+        min-width: 50%;
+        margin:  0 10px  0 0;
+    }
+    .detail, .button{
+        font-size: 16px;
+    }
+    .section3 a{
+        padding: 6px 10px;
+    }
+}
+
+
+/* section4 --> registration + validation */
+
