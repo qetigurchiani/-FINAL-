@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" restaurant ">
+    <meta name="keywords" content="HTML, CSS, JavaScript, slider,form">
+    <meta name="author" content=" Ketevani Gurchiani">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Document</title>
+    <title> rest or run </title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -12,34 +15,27 @@
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/ka-lortkipanidze/css/ka-lortkipanidze.min.css">
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nino-elite-exp-caps/css/bpg-nino-elite-exp-caps.min.css">
 </head>
 <body>
     <!-- nav bar -->
-<header>
-<nav class="navigation" id="nav">
-    <div class="logo">
-        <a href="#homepage">
-        <img src="images/chef-restaurant-logo-publicdomainvectors.svg" alt="">
-    </a>
-    </div>
-    <div class="openmenu"> <i class="fa fa-bars"></i></div>
-    <ul class="mainmenu">
-        <li> <a  href="#homepage"> მთავარი </a> </li>
-        <li> <a  href="#section2"> ჩვენ შესახებ </a> </li>
-        <li> <a  href="#menu"> მენიუ </a> </li>
-        <li> <a  href="#Formregistration"> რეგისტრაცია </a> </li>
-
-        <div class="closemenu"> <i class="fa fa-times"></i> </div>
-        <span class="icons">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-whatsapp"></i>
-        </span>
-    </ul>
-    </div>
-</nav>
-</header>
+    <body>
+        <nav id="nav">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label class="logo">
+            <a href="#homepage"> <img src="images/chef-restaurant-logo-publicdomainvectors.svg" alt=""> </a>
+          </label>
+          <ul>
+            <li><a href="#homepage">მთავარი</a></li>
+            <li><a href="#section2"> ჩვენ შესახებ </a></li>
+            <li><a href="#menu">მენიუ</a></li>
+            <li><a href="#Formregistration">რეგისტრაცია</a></li>
+          </ul>
+        </nav>
 
 <!-- section 1-->
 
@@ -56,7 +52,7 @@
 </section>
 
 <!-- section 2 -->
-<section>
+<section id="section2">
     <div class="bg-image">
       <div class="container">
         <div class="text-block">
@@ -66,27 +62,27 @@
         <div class="block-box">
           <div class="box">
             <div class="circle-icon"><img class="hotel-icon" src="images/icons8-chef-64.png" alt="hotel icon"></div>
-            <h2>ქვეყანაში საუკეთესო შეფები</h2>
+            <h2>ქვეყანაში საუკეთესო მზარეულები</h2>
             <p>
-                შეფების გამოცდილება
+                ჩვენს სამზარეულოში დასაქმებულ ყველა პირს აქვს მრავალწლიანი გამოცდილება 
             </p>
           </div>
           <div class="box">
             <div class="circle-icon"><img src="images/icons8-waiter-64.png" alt="hotel icon"></div>
-            <h4>სწრაფი მომსახურება</h4>
+            <h2>სწრაფი მომსახურება</h2>
             <p>
-                მიმტანების გამოცდილება
+                ჩვენი მიმტანები, რომლთაც მრავალი კურსი აქვთ გავლილი მოგემსახურებიან სწრაფად 
             </p>
           </div>
           <div class="box">
             <div class="circle-icon"><img src="images/icons8-soup-64.png" alt="hotel icon"></div>
-            <h2>საუკეთესო კერძები</h2>
-                <p>რამდენი ქვეყნის სამზარელოდან მზადდება</p>
+            <h2> უგემრიელესი კერძები </h2>
+                <p> კერძები, რომელთაც ჩვენთან გასინჯავთ 20 სხვადასხვა ქვეყნის სამზარეულოდან მზადდება</p>
           </div>
           <div class="box">
             <div class="circle-icon"><img src="images/icons8-hand-drawn-star-80.png" alt="hotel icon"></div>
             <h2> მიშელინის 5 ვარსკვლავი</h2>
-            <p>აქამდე მოსვლის ისტორია</p>
+            <p> ჩვენს რესტორანს აქვს მიშელინის 5 ვარსკვლავი, რაც მრავალწლიანი შრომის შედეგია</p>
           </div>
         </div>
       </div>
@@ -105,7 +101,7 @@
                 <img src="images/1.jpg" alt="">
             </picture>
             <div class="detail">
-                    <p> ორაგული აზიურ სოუსში</p>
+                    <p> ქათმის ჩიზბურგერი </p>
                 <samp>₾ 25.00</samp>
             </div>
             <div class="button">
@@ -117,7 +113,7 @@
                 <img src="images/2.jpg" alt="">
             </picture>
             <div class="detail">
-                    <p> პიცა სიცილიურად </p>
+                    <p> ხამანცკები საფირმო სოუსით </p>
                 <samp>₾ 18.00</samp>
             </div>
             <div class="button">
@@ -129,7 +125,7 @@
                 <img src="images/3.jpg" alt="">
             </picture>
             <div class="detail">
-                    <p>ბურგერი ლორით</p>
+                    <p> პიცა სიცილიურად </p>
                 <samp>₾ 27.00</samp>
             </div>
             <div class="button">
@@ -141,7 +137,7 @@
                 <img src="images/4.jpg" alt="">
             </picture>
             <div class="detail">
-                    <p> ბოლონეზე </p>
+                    <p> ორაგული (რის სოუსში?) </p>
                 <samp>₾ 17.00</samp>
             </div>
             <div class="button">
@@ -165,7 +161,7 @@
                 <img src="images/6.jpg" alt="">
             </picture>
             <div class="detail">
-                    <p>ორაგული</p>
+                    <p>ორაგული ხილ-ბოსტნეულის გარნირით</p>
                 <samp>₾23:00</samp>
             </div>
             <div class="button">
