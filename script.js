@@ -56,52 +56,16 @@ backward_sliderBtn.onclick = () => {
 };
 
 // email form + validation
-
-let registrationForm = document.getElementById("emailForm");
-
-registrationForm.addEventListener("submit", function (event) {
-  event.preventDefault();
-  let errors = {};
-  let agreeField = document.getElementById("agreeTerms").checked;
-
-  if (!agreeField) {
-    errors.agree = "to continue you should agree our terms and conditions";
-  }
-
-  console.log(errors);
-
-  document.querySelectorAll(".error-text").forEach((item) => {
-    item.innerText = " ";
-  });
-
-  for (let key in errors) {
-    let spanText = document.getElementById("error_" + key);
-
-    if (spanText) {
-      spanText.innerText = errors[key];
-    }
-  }
-
-  if (Object.keys(errors).length == 0) {
-    registrationForm.submit();
-  }
-});
-
-// email regex validation
 let emailField = document.getElementById("emailField");
-
 emailField.addEventListener("keyup", function () {
-  let emailValue = document.getElementById("emailField").value;
-  let errorSpan = document.getElementById("text");
+  let emailValue = emailField.value;
+  let errorSpan = document.getElementById("submit-text");
 
-  let emailPattern =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-  if (emailValue.match(emailPattern)) {
+  if (validateEmail(emailValue)) {
     errorSpan.innerText = "Your emal is Valid";
     errorSpan.style.color = "green";
   } else {
-    errorSpan.innerText = "Your emal is invalid";
+    errorSpan.innerText = "Your emal is inValid";
     errorSpan.style.color = "red";
   }
 
@@ -110,3 +74,13 @@ emailField.addEventListener("keyup", function () {
   }
 });
 
+function validateEmail(value){
+  let emailPattern =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (value.match(emailPattern)) {
+      return true;
+    } else {
+      return false;
+    }
+}

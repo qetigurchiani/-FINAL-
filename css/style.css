@@ -6,6 +6,13 @@
 */
 
 /* navbar */
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    background-color:#eecbff;
+}
+
 nav {
     height: 100vh;
     position: fixed;
@@ -13,7 +20,7 @@ nav {
     right: 0;
     left: 0;
     z-index: 10;
-    background: blueviolet;
+    background: rgb(37, 7, 65);
     height: 80px;
     width: 100%;
     font-family: "BPG Nino Elite Exp Caps", sans-serif;
@@ -27,13 +34,13 @@ label.logo {
 .logo img {
     margin-top: 10px;
     width: 50px;
-    -webkit-filter: invert(85%) sepia(41%) saturate(1134%) hue-rotate(5deg) brightness(109%) contrast(111%);
-    filter: invert(85%) sepia(41%) saturate(1134%) hue-rotate(5deg) brightness(109%) contrast(111%);
+    filter: invert(80%) sepia(10%) saturate(1942%) hue-rotate(20deg) brightness(86%) contrast(88%);
 }
 
 nav ul {
     float: right;
     margin-right: 20px;
+
 }
 
 nav ul li {
@@ -43,7 +50,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: yellow;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -51,14 +58,14 @@ nav ul li a {
 }
 
 .ul-list:nth-child(even) a:hover {
-    background: #C45AEC;
-    color: yellow;
+    background: #d9a0f5;
+    color: white;
 
 }
 
 .ul-list:nth-child(odd) a:hover {
-    background: #D462FF;
-    color: yellow;
+    background: #d9a0f5;
+    color: white;
 }
 
 .checkbtn {
@@ -76,17 +83,18 @@ nav ul li a {
 }
 
 .scroll {
-    background-color: rgb(217, 0, 255);
+    background-color: blueviolet;
 }
+
 
 /* section 1 */
 
-.bg-image{
+.bg-image {
     position: fixed;
     min-height: 100vh;
     width: 100%;
     background-color: linear-gradient(to bottom, #33ccff 0%, #9966ff 100%);
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../images/photo-1552566626-52f8b828add9.jpg');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../images/photo-1552566626-52f8b828add9.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -95,7 +103,7 @@ nav ul li a {
 
 
 
-.text-box{
+.text-box {
     width: 90%;
     color: white;
     position: absolute;
@@ -105,9 +113,10 @@ nav ul li a {
     text-align: center;
 }
 
-.text-box h1{
-    font-size: 65px;  
+.text-box h1 {
+    font-size: 65px;
 }
+
 .text-box p {
     margin: 10px 0 40px;
     font-size: 14px;
@@ -118,7 +127,7 @@ nav ul li a {
     display: inline-block;
     color: white;
     border: 1px solid #fff;
-    padding: 12px 34px ;
+    padding: 12px 34px;
     font-size: 13px;
     background: transparent;
     position: relative;
@@ -127,12 +136,60 @@ nav ul li a {
 
 .button1:hover {
     border: 1px solid white;
-    background:  #76448A;
-    transition: 1s ;
+    background: #76448A;
+    transition: 1s;
 
 }
 
-/* section2 */
+
+/* about us */
+.wrapper {
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.row {
+    width: 100%;
+    padding: 50px 100px;
+
+}
+
+.image-section {
+    width: 50%;
+    float: left;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    width: 40%;
+    float: left;
+    margin-left: 50px;
+}
+
+.content h1 {
+    font-size: 90px;
+    letter-spacing: 3px;
+    margin-top: 25px;
+    color: #222;
+}
+
+.content h2 {
+    font-size: 40px;
+    color: black;
+    margin-top: 25px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
 .bg-image1 {
     background-image: url('../images/bg-image.jpg');
     width: 100%;
@@ -157,22 +214,15 @@ nav ul li a {
     opacity: 40%;
 }
 
+/* section2 */
 .container {
     max-width: 1088px;
     width: 80%;
     margin: 0 auto;
     position: relative;
-    padding-top: 92px;
+    padding-top: 10px;
 }
 
-.text-block h3 {
-    text-align: left;
-    color: blue;
-    font-size: 20px;
-    font-family: "BPG Nino Elite Exp Caps", sans-serif;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
 
 .text-block p {
     text-align: center;
@@ -328,7 +378,7 @@ nav ul li a {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
-    color: #cc66ff;
+    color: blue;
     font-size: 40px;
 }
 
@@ -338,127 +388,134 @@ nav ul li a {
 }
 
 
-
-
-
 /* footer  */
 
-.container{
-	width: 100%;
-	margin:auto;
+.container {
+    width: 100%;
+    margin: auto;
 }
-.row{
-	display: flex;
-	flex-wrap: wrap;
-    
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
 }
-.footer{
-	background-color:blueviolet;
+
+.footer {
+    background-color: blueviolet;
     padding: 60px 0;
 }
-.footer-col{
-   width: 30%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: yellow;
-	text-transform: capitalize;
-	margin-bottom: 20px;
-	font-weight: 500;
-	position: relative;
+
+.footer-col {
+    width: 30%;
+    padding: 0 15px;
 }
 
-.footer-col p{
-	font-size: 15px;
-	color: yellow;
-	text-transform: capitalize;
-	margin-bottom: 15px;
-	position: relative;
+.footer-col h4 {
+    font-size: 18px;
+    color: yellow;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
 }
 
-.footer-col .address-text{
+.footer-col p {
+    font-size: 15px;
+    color: yellow;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-col .address-text {
     color: white;
 }
 
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: red;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-    
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
 }
-.ul-list1:not(:last-child){
-	margin-bottom: 10px;
+
+.ul-list1:not(:last-child) {
+    margin-bottom: 10px;
 }
-.ul-list1 a{
-	font-size: 16px;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: white;
-	display: block;
-	transition: all 0.3s ease;
+
+.ul-list1 a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+    display: block;
+    transition: all 0.3s ease;
     margin-top: 30px;
 }
-.ul-list1 a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-    
+
+.ul-list1 a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+
 }
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
 }
-.footer-col .social-links :nth-child(1):hover{
-	color: blue;
-	background-color: #ffffff;
+
+.footer-col .social-links :nth-child(1):hover {
+    color: blue;
+    background-color: #ffffff;
 }
-.footer-col .social-links :nth-child(2):hover{
-	color: rgb(104, 196, 233);
-	background-color: #ffffff;
+
+.footer-col .social-links :nth-child(2):hover {
+    color: rgb(104, 196, 233);
+    background-color: #ffffff;
 }
-.footer-col .social-links :nth-child(3):hover{
-	color: rgb(138, 10, 127);
-	background-color: #ffffff;
+
+.footer-col .social-links :nth-child(3):hover {
+    color: rgb(138, 10, 127);
+    background-color: #ffffff;
 }
-.footer-col .social-links :nth-child(4):hover{
-	color:rgb(56, 255, 56);
-	background-color: #ffffff;
+
+.footer-col .social-links :nth-child(4):hover {
+    color: rgb(56, 255, 56);
+    background-color: #ffffff;
 }
+
 .footer-col a {
     color: white;
 }
-.footer-col a:hover{
+
+.footer-col a:hover {
     color: purple;
 }
 
 
 /* email form + validation */
 
-.error-text {
-    color: red;
-    display: block;
-}
-
-#text {
+#submit-text {
     display: block;
 }
 
 #emailField {
-    width: 300px;
+    margin-top: 20px;
+    width: 250px;
     height: 40px;
 }
 
@@ -471,6 +528,4 @@ nav ul li a {
     border-color: rgb(92, 16, 163);
     cursor: pointer;
 }
-
-
 
