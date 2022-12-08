@@ -1,55 +1,69 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+body{
+    background-color: rgb(192, 132, 248);
+}
 /* navbar */
-nav{
+nav {
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 10 ;
+    z-index: 10;
     background: blueviolet;
     height: 80px;
     width: 100%;
     font-family: "BPG Nino Elite Exp Caps", sans-serif;
-  }
-  label.logo {
+}
+
+label.logo {
     padding: 0px 30px;
     cursor: pointer;
-  }
+}
 
-  .logo img{
+.logo img {
     margin-top: 10px;
     width: 50px;
+    -webkit-filter: invert(85%) sepia(41%) saturate(1134%) hue-rotate(5deg) brightness(109%) contrast(111%);
     filter: invert(85%) sepia(41%) saturate(1134%) hue-rotate(5deg) brightness(109%) contrast(111%);
 }
-  nav ul{
+
+nav ul {
     float: right;
     margin-right: 20px;
-  }
-  nav ul li{
+}
+
+nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
-  }
-  nav ul li a{
+}
+
+nav ul li a {
     color: white;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
-  }
+}
 
-  ul:nth-child(even) a:hover{
-    background: #C45AEC ;
+.ul-list:nth-child(even) a:hover {
+    background: #C45AEC;
     color: yellow;
 
 }
 
-ul:nth-child(odd) a:hover{
-    background: #D462FF ;
+.ul-list:nth-child(odd) a:hover {
+    background: #D462FF;
     color: yellow;
 }
 
-  .checkbtn{
+.checkbtn {
     font-size: 30px;
     color: white;
     float: right;
@@ -57,57 +71,73 @@ ul:nth-child(odd) a:hover{
     margin-right: 40px;
     cursor: pointer;
     display: none;
-  }
-  #check{
+}
+
+#check {
     display: none;
-  }
-  .scroll{
-    background-color: rgb(217, 0, 255) ;
+}
+
+.scroll {
+    background-color: rgb(217, 0, 255);
 }
 
 /* section1 */
 
-.section1{
+.section1 {
+    width: 1285px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 150px;
-    margin-left: 170px ;
- 
+    margin-left: 170px;
+
 }
-.left-block{
+
+.left-block {
     width: 600px;
 }
-.section1-h2{
-    font-size: 45px;
+
+.section1-h2 {
+    font-size: 35px;
     color: blueviolet;
     font-family: "KA_LORTKIPANIDZE", sans-serif;
 }
-.section1-p{
-    margin-top: 40px;
+
+.section1-p {
+    margin-top: 30px;
     font-size: 20px;
     font-family: "KA_LORTKIPANIDZE", sans-serif;
 }
 
-.right-block{
+.right-block {
     background-image: url("../images/cake.jpg");
-    width: 45%;
+    width: 800px;
     height: 600px;
-    background-size:cover;
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     margin-left: 300px;
-    border-radius: 0% 100% 0% 100% / 80% 25% 75% 20% ;
+    margin-bottom: 20px;
+    border-radius: 0% 100% 0% 100% / 80% 25% 75% 20%;
 }
 
 /* section2 */
 .bg-image {
     background-image: url('../images/bg-image.jpg');
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 620px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+
 .bg-image::before {
     content: ' ';
     width: 100%;
@@ -119,6 +149,7 @@ ul:nth-child(odd) a:hover{
     left: 0;
     opacity: 40%;
 }
+
 .container {
     max-width: 1088px;
     width: 80%;
@@ -126,6 +157,7 @@ ul:nth-child(odd) a:hover{
     position: relative;
     padding-top: 92px;
 }
+
 .text-block h3 {
     text-align: left;
     color: blue;
@@ -142,27 +174,43 @@ ul:nth-child(odd) a:hover{
     font-family: "KA_LORTKIPANIDZE", sans-serif;
     margin-bottom: 15px;
 }
+
 .block-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+
 .box {
     width: 24%;
     height: 260px;
     background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .box h2 {
     width: 250px;
     text-align: center;
-    font-size:  15px;
+    font-size: 15px;
     font-family: "BPG Nino Elite Exp Caps", sans-serif;
-    color: yellow;
+    color: blue;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -171,64 +219,80 @@ ul:nth-child(odd) a:hover{
 .box p {
     width: 230px;
     text-align: center;
-    font-size:  15px;
-    color: white;
+    font-size: 15px;
+    color: black;
     font-family: "BPG Nino Elite Exp Caps", sans-serif;
 }
 
-.block-box :nth-child(even).box{
-    background-color: blueviolet;
+.block-box :nth-child(even).box {
     border-radius: 10%;
 }
 
-.block-box :nth-child(odd).box{
+.block-box :nth-child(odd).box {
     border-radius: 10%;
-    background-color: rgb(153, 105, 197);
 }
 
 /* slider - section3 */
-.section3{
+.section3 {
     width: 98%;
     height: 600px;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     overflow-x: auto;
 }
 
-.section3::-webkit-scrollbar{
+.section3::-webkit-scrollbar {
     display: none;
 }
-.section3 .product{
+
+.section3 .product {
     min-width: 24%;
     height: 90%;
     background: whitesmoke;
-    margin:  0 20px  0 0;
+    margin: 0 20px 0 0;
     border-radius: 20px;
     position: relative;
     left: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 
 }
-.section3 picture{
+
+.section3 picture {
     width: 100%;
     height: 70%;
     padding: 20px;
     /*background: green;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
     margin-bottom: 20px;
 }
-.section3 picture img{
+
+.section3 picture img {
     width: 100%;
 }
+
 .detail,
-.section3 button{
+.section3 button {
     width: 90%;
     margin: auto;
     padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 50px;
     font-size: 15px;
@@ -236,7 +300,7 @@ ul:nth-child(odd) a:hover{
     font-family: "BPG Nino Elite Exp Caps", sans-serif;
 }
 
-.section3 a{
+.section3 a {
     text-decoration: none;
     padding: 6px 14px;
     font-size: 15px;
@@ -247,18 +311,18 @@ ul:nth-child(odd) a:hover{
 }
 
 
-.forw-backw{
+.forw-backw {
     text-align: center;
     margin-top: 40px;
-    color:#cc66ff;
+    color: #cc66ff;
     font-size: 30px;
 }
 
-.forw-backw h3{
+.forw-backw h3 {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
-    color:#cc66ff;
+    color: #cc66ff;
     font-size: 40px;
 }
 
@@ -271,38 +335,40 @@ ul:nth-child(odd) a:hover{
 /* registration + validation */
 
 .error-text {
-    color:red;
+    color: red;
     display: block;
 }
 
-#usernameField{
-    margin-top: 20px;
-    width: 300px;
-    height: 40px;
-}
-    
-
-#passwordField{
+#usernameField {
     margin-top: 20px;
     width: 300px;
     height: 40px;
 }
 
-#passwordFieldrepeat{
-  margin-top: 20px;
-  width: 300px;
-  height: 40px;
+
+#passwordField {
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
 }
 
-#text{
+#passwordFieldrepeat {
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+}
+
+#text {
     display: block;
 }
-#emailField{
+
+#emailField {
     margin-top: 20px;
     width: 300px;
     height: 40px;
 }
-.submitForm{
+
+.submitForm {
     margin-top: 10px;
     width: 100px;
     height: 30px;
@@ -312,26 +378,121 @@ ul:nth-child(odd) a:hover{
     cursor: pointer;
 }
 
-.registration-text{
-    text-align:center;
+.registration-text {
+    text-align: center;
     background-color: #cc99ff;
-    width:100%;
+    width: 100%;
     height: 400px;
-    }
+}
 
-.registration-text h4{
+.registration-text h4 {
     font-size: 20px;
     text-align: center;
     padding-top: 20px;
     color: yellow;
     font-family: 'Poppins';
 }
-.registration-text h2{
+
+.registration-text h2 {
     font-size: 25px;
     text-align: center;
     color: yellow;
-  
-   
 }
 
+
+/* footer  */
+
+.container{
+	width: 100%;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+    
+}
+.footer{
+	background-color:blueviolet;
+    padding: 60px 0;
+}
+.footer-col{
+   width: 30%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: yellow;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col p{
+	font-size: 15px;
+	color: yellow;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.ul-list1:not(:last-child){
+	margin-bottom: 10px;
+}
+.ul-list1 a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+    margin-top: 25px;
+}
+.ul-list1 a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+    
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links :nth-child(1):hover{
+	color: blue;
+	background-color: #ffffff;
+}
+.footer-col .social-links :nth-child(2):hover{
+	color: rgb(104, 196, 233);
+	background-color: #ffffff;
+}
+.footer-col .social-links :nth-child(3):hover{
+	color: rgb(138, 10, 127);
+	background-color: #ffffff;
+}
+.footer-col .social-links :nth-child(4):hover{
+	color:rgb(56, 255, 56);
+	background-color: #ffffff;
+}
+.map{
+    border-radius: 20%;
+}
 
