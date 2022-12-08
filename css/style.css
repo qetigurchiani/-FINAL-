@@ -4,9 +4,7 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-body{
-    background-color: rgb(192, 132, 248);
-}
+
 /* navbar */
 nav {
     height: 100vh;
@@ -81,52 +79,61 @@ nav ul li a {
     background-color: rgb(217, 0, 255);
 }
 
-/* section1 */
+/* section 1 */
 
-.section1 {
-    width: 1285px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 150px;
-    margin-left: 170px;
-
-}
-
-.left-block {
-    width: 600px;
-}
-
-.section1-h2 {
-    font-size: 35px;
-    color: blueviolet;
-    font-family: "KA_LORTKIPANIDZE", sans-serif;
-}
-
-.section1-p {
-    margin-top: 30px;
-    font-size: 20px;
-    font-family: "KA_LORTKIPANIDZE", sans-serif;
-}
-
-.right-block {
-    background-image: url("../images/cake.jpg");
-    width: 800px;
-    height: 600px;
+.bg-image{
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    background-color: linear-gradient(to bottom, #33ccff 0%, #9966ff 100%);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../images/photo-1552566626-52f8b828add9.jpg');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    position: relative;
     background-repeat: no-repeat;
-    margin-left: 300px;
-    margin-bottom: 20px;
-    border-radius: 0% 100% 0% 100% / 80% 25% 75% 20%;
+}
+
+
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 65px;  
+}
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.button1 {
+    display: inline-block;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px ;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.button1:hover {
+    border: 1px solid white;
+    background:  #76448A;
+    transition: 1s ;
+
 }
 
 /* section2 */
-.bg-image {
+.bg-image1 {
     background-image: url('../images/bg-image.jpg');
     width: 100%;
     display: -webkit-box;
@@ -138,7 +145,7 @@ nav ul li a {
     position: relative;
 }
 
-.bg-image::before {
+.bg-image1::before {
     content: ' ';
     width: 100%;
     height: 100%;
@@ -268,7 +275,6 @@ nav ul li a {
     width: 100%;
     height: 70%;
     padding: 20px;
-    /*background: green;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -332,72 +338,7 @@ nav ul li a {
 }
 
 
-/* registration + validation */
 
-.error-text {
-    color: red;
-    display: block;
-}
-
-#usernameField {
-    margin-top: 20px;
-    width: 300px;
-    height: 40px;
-}
-
-
-#passwordField {
-    margin-top: 20px;
-    width: 300px;
-    height: 40px;
-}
-
-#passwordFieldrepeat {
-    margin-top: 20px;
-    width: 300px;
-    height: 40px;
-}
-
-#text {
-    display: block;
-}
-
-#emailField {
-    margin-top: 20px;
-    width: 300px;
-    height: 40px;
-}
-
-.submitForm {
-    margin-top: 10px;
-    width: 100px;
-    height: 30px;
-    background-color: blueviolet;
-    color: yellow;
-    border-color: rgb(92, 16, 163);
-    cursor: pointer;
-}
-
-.registration-text {
-    text-align: center;
-    background-color: #cc99ff;
-    width: 100%;
-    height: 400px;
-}
-
-.registration-text h4 {
-    font-size: 20px;
-    text-align: center;
-    padding-top: 20px;
-    color: yellow;
-    font-family: 'Poppins';
-}
-
-.registration-text h2 {
-    font-size: 25px;
-    text-align: center;
-    color: yellow;
-}
 
 
 /* footer  */
@@ -432,8 +373,12 @@ nav ul li a {
 	font-size: 15px;
 	color: yellow;
 	text-transform: capitalize;
-	margin-bottom: 35px;
+	margin-bottom: 15px;
 	position: relative;
+}
+
+.footer-col .address-text{
+    color: white;
 }
 
 .footer-col h4::before{
@@ -441,10 +386,11 @@ nav ul li a {
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: red;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
+    
 }
 .ul-list1:not(:last-child){
 	margin-bottom: 10px;
@@ -454,10 +400,10 @@ nav ul li a {
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
-	color: #bbbbbb;
+	color: white;
 	display: block;
 	transition: all 0.3s ease;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 .ul-list1 a:hover{
 	color: #ffffff;
@@ -492,7 +438,39 @@ nav ul li a {
 	color:rgb(56, 255, 56);
 	background-color: #ffffff;
 }
-.map{
-    border-radius: 20%;
+.footer-col a {
+    color: white;
 }
+.footer-col a:hover{
+    color: purple;
+}
+
+
+/* email form + validation */
+
+.error-text {
+    color: red;
+    display: block;
+}
+
+#text {
+    display: block;
+}
+
+#emailField {
+    width: 300px;
+    height: 40px;
+}
+
+.submitForm {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: blueviolet;
+    color: yellow;
+    border-color: rgb(92, 16, 163);
+    cursor: pointer;
+}
+
+
 

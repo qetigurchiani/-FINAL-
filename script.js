@@ -55,32 +55,13 @@ backward_sliderBtn.onclick = () => {
   left_mover();
 };
 
-//form validation
-let registrationForm = document.getElementById("resgitrationForm");
+// email form + validation
+
+let registrationForm = document.getElementById("emailForm");
 
 registrationForm.addEventListener("submit", function (event) {
   event.preventDefault();
   let errors = {};
-
-  //username
-  let usernameValue = document.getElementById("usernameField").value;
-  if (usernameValue == "" && usernameValue.length < 5) {
-    errors.username =
-      "Username field can not be empty and must include at least one capital letter";
-  }
-
-  //password
-  let passwordValue = document.getElementById("passwordField").value;
-  let passwordValue2 = document.getElementById("passwordFieldrepeat").value;
-
-  if (passwordValue == "") {
-    errors.password = "Password field can not be empty";
-  }
-  if (passwordValue != passwordValue2) {
-    errors.password2 = "Passwords do NOT macth";
-  }
-
-  //checkbox
   let agreeField = document.getElementById("agreeTerms").checked;
 
   if (!agreeField) {
@@ -129,5 +110,3 @@ emailField.addEventListener("keyup", function () {
   }
 });
 
-
-// api

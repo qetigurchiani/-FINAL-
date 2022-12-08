@@ -1,4 +1,5 @@
 /* navbar */
+
 @media (max-width: 952px){
     label.logo{
       font-size: 30px;
@@ -35,8 +36,19 @@
     }
   }
 
-/* section1 */
 
+/* section1 */
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 65px;  
+    }
+    .text-box p {
+        margin: 10px 0 40px;
+        font-size: 14px;
+        color: white;
+    }
+
+}
 
 /* section2 */
 

@@ -32,40 +32,37 @@
 </head>
 <body>
     <!-- nav bar -->
-    <body>
-        <nav id="nav">
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-          <label class="logo">
-            <a href="#homepage"> <img src="images/chef-restaurant-logo-publicdomainvectors.svg" alt=""> </a>
-          </label>
-          <ul class="ul-list">
-            <li><a href="#homepage">მთავარი</a></li>
-            <li><a href="#section2"> ჩვენ შესახებ </a></li>
-            <li><a href="#menu">მენიუ</a></li>
-            <li><a href="#Formregistration">რეგისტრაცია</a></li>
-          </ul>
-        </nav>
-
-<!-- section 1-->
-
-<section id="homepage">
-    <div class="section1">
-        <div class="left-block">
-            <h2 class="section1-h2"> მიირთვი საუკეთესო <span>
-                საუკეთესო შეფებისგან
-            </span></h2>
-            <p class="section1-p"> რესტორანი სხვადასხვა ქვეყნის სამზარეულოთი </p>
+    <nav id="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">
+          <a href="#homepage"> <img src="images/chef-restaurant-logo-publicdomainvectors.svg" alt=""> </a>
+        </label>
+        <ul class="ul-list">
+          <li><a href="#homepage">მთავარი</a></li>
+          <li><a href="#section2"> ჩვენ შესახებ </a></li>
+          <li><a href="#menu">მენიუ</a></li>
+          <li><a href="#Formregistration">რეგისტრაცია</a></li>
+        </ul>
+      </nav>
+      
+      <!-- section 1 -->
+      <section class="section1">
+        <div class="bg-image">
+          <div class="text-box">
+            <h1> მიირთვი საუკეთესო <span>
+              საუკეთესო შეფებისგან</h1>
+            <p> რესტორანი სხვადასხვა ქვეყნის სამზარეულოთი </p>
+            <a href="#menu" class="button1"> იხილეთ ჩვენი მენიუ </a>
+            </p>
+          </div>
         </div>
-        <div class="right-block"></div>
-    </div>
-</section>
-
+      </section>
 <!-- section 2 -->
 <section id="section2">
-    <div class="bg-image">
+    <div class="bg-image1">
       <div class="container">
         <div class="text-block">
           <h3>ჩვენ შესახებ</h3>
@@ -254,38 +251,9 @@
         </div>
     </section>
 
-  <!-- registration + validation -->
-    <section id="Formregistration">
-        <div class="registration-text">
-            <h4>რეგისტრაცია</h4>
-            <h2> გაიარე რეგისტრაცია და მიიღე წვდომა ჩვენს მიტანის სერვისზე </h2>
-        <form action="#" id="resgitrationForm" method="POST">
-          <div>
-            <input type="text" name="username" id="usernameField" />
-            <span class="error-text" id="error_username"></span>
-          </div>
-          <div>
-            <input type="password" name="password" id="passwordField" placeholder="Enter your password" class="input"/>
-            <span class="error-text" id="error_password"></span>
-          </div>
-          <div>
-            <input type="password" name="password2" id="passwordFieldrepeat" placeholder="Repeat Your password" class="input"/>
-            <span class="error-text" id="error_password2"></span>
-          </div>
-          <div>
-            <input type="email" id="emailField" name="email"
-            placeholder="Enter your email">
-            <span id="text"></span>
-          </div>
-          <div>
-            <input type="checkbox" name="agree" id="agreeTerms" />
-            <label for="agreeTerms"> I agree to the website terms and conditions</label>
-            <span class="error-text" id="error_agree"></span>
-          </div>
-          <button type="submit" class="submitForm">Submit Form</button>
-        </form>
-    </div>
-      </section>
+
+</body>
+</html>
 
     <script type="text/javascript" src="script.js"></script>
 
@@ -303,10 +271,21 @@
                 </div>
                 <div class="footer-col">
                     <h4> მისამართი </h4>
-                    <div class="contact">
-                        <br>
-                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.2584485574534!2d44.7993225159269!3d41.69335608493318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cefb1568e95%3A0xf27796ca7216c57!2sFreedom%20Square!5e0!3m2!1sen!2sge!4v1670355991615!5m2!1sen!2sge" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                        <p class="address-text"> თუ გსურთ სიახლეების შესახებ ინფორმაციის მიღება,
+                        დაგვიტოვეთ თქვენი ელ.ფოსტის მისამართი. </p>
+                    <form action="#" id="resgitrationForm" method="POST">
+                      <div>
+                        <input type="email" id="emailField" name="email"
+                        placeholder="Enter your email">
+                        <span id="text"></span>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="agree" id="agreeTerms" />
+                        <label for="agreeTerms"> I agree to the website terms and conditions</label>
+                        <span class="error-text" id="error_agree"></span>
+                      </div>
+                      <button type="submit" class="submitForm"> გაგზავნა </button>
+                    </form>
 
                 </div>
                 <div class="footer-col">
@@ -317,7 +296,7 @@
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
-                    
+                    <a href=""> <i class="fa-solid fa-phone"></i> +995 555 00 00 00 </a>
                 </div>
             </div>
         </div>
