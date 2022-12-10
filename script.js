@@ -10,11 +10,11 @@ window.onscroll = function () {
   }
 };
 
-//section3 -> slider
+//section 4 -> slider
 let backward_sliderBtn = document.getElementById("backward-slider");
 let forward_sliderBtn = document.getElementById("forward-slider");
 let product = document.getElementsByClassName("product");
-let product_page = Math.ceil(product.length / 4);
+let product_page = Math.ceil(product.length);
 let l = 0;
 let movePer = 75.34;
 let maxMove = 203;
@@ -55,6 +55,7 @@ backward_sliderBtn.onclick = () => {
   left_mover();
 };
 
+// footer
 // email form + validation
 let emailField = document.getElementById("emailField");
 emailField.addEventListener("keyup", function () {
@@ -63,10 +64,10 @@ emailField.addEventListener("keyup", function () {
 
   if (validateEmail(emailValue)) {
     errorSpan.innerText = "Your emal is Valid";
-    errorSpan.style.color = "green";
+    errorSpan.style.color = "yellow";
   } else {
     errorSpan.innerText = "Your emal is inValid";
-    errorSpan.style.color = "red";
+    errorSpan.style.color = "white";
   }
 
   if (emailValue == "") {

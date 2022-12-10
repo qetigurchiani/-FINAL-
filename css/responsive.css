@@ -57,7 +57,7 @@
 
 }
 
-/* about us  */
+/* section2  */
 @media screen and (max-width:768px) {
   .image-section {
     width: 100%;
@@ -87,26 +87,23 @@
   }
 }
 
-/* section2 */
+/* section 3 */
 
 @media (max-width:1024px) {
   .bg-image {
-    height: auto;
-    padding-bottom: 90px;
+      height: auto;
+      padding-bottom: 90px;
   }
-
   .box {
-    width: 48%;
+      width: 48%;
   }
-
-  .box:nth-child(1),
-  .box:nth-child(2) {
-    margin-bottom: 30px;
-    margin-top: 20px;
+  .box:nth-child(1),.box:nth-child(2) {
+      margin-bottom: 30px;
+      margin-top: 20px;
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 540px) {
   .box {
     width: 100%;
   }
@@ -117,21 +114,22 @@
 
 }
 
-/* section 3 */
+/* section 4 -> slider */
 
 @media (max-width: 1024px) {
 
-  .section3 .product {
-    min-width: 50%;
+  .section4 .product {
+    min-width: 48%;
     margin: 0 10px 0 0;
   }
 
   .detail,
   .button {
     font-size: 16px;
+    
   }
 
-  .section3 a {
+  .section4 a {
     padding: 6px 10px;
   }
 }

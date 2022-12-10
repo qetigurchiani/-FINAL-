@@ -50,7 +50,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: yellow;
+    color: rgb(196, 196, 41);
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -83,7 +83,7 @@ nav ul li a {
 }
 
 .scroll {
-    background-color: blueviolet;
+    background-color:  blueviolet;
 }
 
 
@@ -111,6 +111,8 @@ nav ul li a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: "KA_LORTKIPANIDZE", sans-serif;
+    
 }
 
 .text-box h1 {
@@ -136,13 +138,14 @@ nav ul li a {
 
 .button1:hover {
     border: 1px solid white;
-    background: #76448A;
+    background: rgb(37, 7, 65);
     transition: 1s;
+    color: yellow;
 
 }
 
 
-/* about us */
+/* section2 */
 .wrapper {
     width: 100%;
     min-height: 600px;
@@ -163,6 +166,7 @@ nav ul li a {
 .image-section img {
     width: 100%;
     height: auto;
+    border-radius: 9% 91% 8% 92% / 89% 13% 87% 11%  ;
 }
 
 .content {
@@ -172,22 +176,20 @@ nav ul li a {
 }
 
 .content h1 {
-    font-size: 90px;
+    font-size: 70px;
     letter-spacing: 3px;
-    margin-top: 25px;
+    margin-top: 20px;
     color: #222;
-}
-
-.content h2 {
-    font-size: 40px;
-    color: black;
-    margin-top: 25px;
+    font-family: "KA_LORTKIPANIDZE", sans-serif;
 }
 
 .content p {
     font-size: 20px;
     margin-top: 10px;
     line-height: 1.5;
+    font-family: "KA_LORTKIPANIDZE", sans-serif;
+    font-weight: bold;
+
 }
 
 .bg-image1 {
@@ -214,13 +216,16 @@ nav ul li a {
     opacity: 40%;
 }
 
-/* section2 */
+/* section 3 */
+
 .container {
+    width: 100%;
+    margin: auto;
     max-width: 1088px;
     width: 80%;
-    margin: 0 auto;
     position: relative;
     padding-top: 10px;
+    
 }
 
 
@@ -267,7 +272,7 @@ nav ul li a {
     text-align: center;
     font-size: 15px;
     font-family: "BPG Nino Elite Exp Caps", sans-serif;
-    color: blue;
+    color: blueviolet;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -289,8 +294,8 @@ nav ul li a {
     border-radius: 10%;
 }
 
-/* slider - section3 */
-.section3 {
+/* slider - section 4 */
+.section4 {
     width: 98%;
     height: 600px;
     margin: auto;
@@ -303,11 +308,11 @@ nav ul li a {
     overflow-x: auto;
 }
 
-.section3::-webkit-scrollbar {
+.section4::-webkit-scrollbar {
     display: none;
 }
 
-.section3 .product {
+.section4 .product {
     min-width: 24%;
     height: 90%;
     background: whitesmoke;
@@ -321,7 +326,7 @@ nav ul li a {
 
 }
 
-.section3 picture {
+.section4 picture {
     width: 100%;
     height: 70%;
     padding: 20px;
@@ -332,12 +337,12 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.section3 picture img {
+.section4 picture img {
     width: 100%;
 }
 
 .detail,
-.section3 button {
+.section4 button {
     width: 90%;
     margin: auto;
     padding: 5px;
@@ -356,7 +361,7 @@ nav ul li a {
     font-family: "BPG Nino Elite Exp Caps", sans-serif;
 }
 
-.section3 a {
+.section4 a {
     text-decoration: none;
     padding: 6px 14px;
     font-size: 15px;
@@ -364,22 +369,24 @@ nav ul li a {
     display: inline-block;
     background: #6773ff;
     color: white;
+    font-family: "KA_LORTKIPANIDZE", sans-serif;
 }
 
 
-.forw-backw {
+.forward-backward{
     text-align: center;
     margin-top: 40px;
     color: #cc66ff;
     font-size: 30px;
 }
 
-.forw-backw h3 {
+#menu h3 {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
-    color: blue;
+    color: blueviolet;
     font-size: 40px;
+    font-family: "KA_LORTKIPANIDZE", sans-serif;
 }
 
 
@@ -390,7 +397,7 @@ nav ul li a {
 
 /* footer  */
 
-.container {
+.footer-container {
     width: 100%;
     margin: auto;
 }
@@ -428,7 +435,7 @@ nav ul li a {
     position: relative;
 }
 
-.footer-col .address-text {
+.footer-col .news-text{
     color: white;
 }
 
