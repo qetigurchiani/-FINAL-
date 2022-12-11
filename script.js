@@ -85,3 +85,35 @@ function validateEmail(value){
       return false;
     }
 }
+
+
+// api
+
+// let chef = document.getElementById('chefs');
+
+// async function getUsers() {
+//   let url = 'https://testimonialapi.toolcarton.com/api';
+//   try {
+//       let responseText = await fetch(url);
+//       return await responseText.json();
+//   } catch (error) {
+//       console.log(error);
+//   }
+// }
+
+// async function renderUsers() {
+//   let users = await getUsers();
+//   let html = '';
+//   console.log(users);
+//   for(var i=0;i<4;i++){
+//     html += users[i].name + ' '; 
+//   }
+//   chef.innerHTML = html;
+// }
+
+// renderUsers();
+
+
+
+// api
+
