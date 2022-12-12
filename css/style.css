@@ -6,16 +6,11 @@
 */
 
 /* navbar */
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
 body {
     background-color: rgb(237, 228, 237);
 }
@@ -42,7 +37,7 @@ label.logo {
     margin-top: 10px;
     width: 45px;
     -webkit-filter: invert(80%) sepia(10%) saturate(1942%) hue-rotate(20deg) brightness(86%) contrast(88%);
-            filter: invert(80%) sepia(10%) saturate(1942%) hue-rotate(20deg) brightness(86%) contrast(88%);
+    filter: invert(80%) sepia(10%) saturate(1942%) hue-rotate(20deg) brightness(86%) contrast(88%);
 }
 
 nav ul {
@@ -93,7 +88,7 @@ nav ul li a {
 }
 
 .scroll {
-    background-color:  blueviolet;
+    background-color: blueviolet;
 }
 
 
@@ -119,17 +114,18 @@ nav ul li a {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     font-family: "KA_LORTKIPANIDZE", sans-serif;
-    
+
 }
 
 .text-box h1 {
     font-size: 65px;
     margin-bottom: 35px;
 }
+
 .text-box p {
     text-align: center;
     color: #fff;
@@ -183,7 +179,7 @@ nav ul li a {
 .image-section img {
     width: 100%;
     height: auto;
-    border-radius: 9% 91% 8% 92% / 89% 13% 87% 11%  ;
+    border-radius: 9% 91% 8% 92% / 89% 13% 87% 11%;
 }
 
 .content {
@@ -221,20 +217,20 @@ nav ul li a {
     position: relative;
     padding-top: 10px;
 
-    
+
 }
 
- .bg-image1 {
+.bg-image1 {
     background-image: url('../images/bg-image.jpg');
     width: 100%;
     display: -webkit-box;
-    display: -ms-flexbox; 
+    display: -ms-flexbox;
     padding-top: 150px;
     padding-bottom: 150px;
-    display: flex; 
+    display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;  
+    position: relative;
 }
 
 .bg-image1::before {
@@ -247,8 +243,9 @@ nav ul li a {
     top: 0;
     left: 0;
     opacity: 40%;
-} 
-.moreaboutus{
+}
+
+.moreaboutus {
     text-align: center;
     color: #fff;
     font-weight: bold;
@@ -394,7 +391,7 @@ nav ul li a {
 }
 
 
-.forward-backward{
+.forward-backward {
     text-align: center;
     margin-top: 40px;
     color: #cc66ff;
@@ -416,7 +413,46 @@ nav ul li a {
 }
 
 /* api */
+#chefs-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
+.chef {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 25px;
+    color: blueviolet;
+    font-family: "KA_LORTKIPANIDZE", sans-serif;
+}
+
+.img {
+    width: 300px;
+}
+
+.img h2 {
+    margin: 15px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.img h3 {
+    color: blueviolet;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.chefs-img {
+    width: 100px;
+    border-radius: 50%;
+}
 
 /* footer  */
 
@@ -430,7 +466,7 @@ nav ul li a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 
 }
 
@@ -461,7 +497,7 @@ nav ul li a {
     position: relative;
 }
 
-.footer-col .news-text{
+.footer-col .news-text {
     color: white;
 }
 
@@ -473,7 +509,7 @@ nav ul li a {
     background-color: red;
     height: 2px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 50px;
 
 }
@@ -562,4 +598,3 @@ nav ul li a {
     border-color: rgb(92, 16, 163);
     cursor: pointer;
 }
-

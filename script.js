@@ -113,7 +113,40 @@ function validateEmail(value){
 
 // renderUsers();
 
-
-
 // api
 
+fetch("https://reqres.in/api/users?page=1&per_page=3", {
+  method: "GET",
+})
+  .then(function (item1) {
+    if (item1.status != 200) {
+      throw item1.status;
+    }
+    return item1.json();
+  })
+  .then(function (item2) {
+    let chefsContainer = document.getElementById("chefs-container");
+    item2.data.forEach((item) => {
+      let div = document.createElement("div");
+      div.classList.add("img");
+
+      let divAvatar = document.createElement("div");
+      let img = document.createElement("img");
+      img.classList.add("chefs-img");
+      img.src = item.avatar;
+      img.alt = "avatar";
+      divAvatar.appendChild(img);
+
+      let names = document.createElement("h2");
+      names.innerText = item.first_name + " " + item.last_name;
+
+      let experience  = document.createElement("h3");
+      experience.innerText = "15 წლიანი სამუშაო გამოცდილება";
+
+      div.appendChild(divAvatar);
+      div.appendChild(names);
+      div.appendChild(experience);
+
+      chefsContainer.appendChild(div);
+    });
+  });
