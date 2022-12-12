@@ -478,10 +478,6 @@ nav ul li a {
 
 }
 
-.ul-list1:not(:last-child) {
-    margin-bottom: 10px;
-}
-
 .ul-list1 a {
     font-size: 16px;
     color: #ffffff;
