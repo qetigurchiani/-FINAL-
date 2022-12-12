@@ -87,6 +87,8 @@
   }
 } 
 
+
+
 /* section 3 */
 
 @media (max-width:1024px) {
@@ -143,8 +145,6 @@
     margin-bottom: 30px;
   }
 }
-
-
 
 @media(max-width: 574px) {
   .footer-col {
