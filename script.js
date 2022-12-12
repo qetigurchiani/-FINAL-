@@ -3,7 +3,7 @@
 let myNav = document.getElementById("nav");
 
 window.onscroll = function () {
-  if (document.documentElement.scrollTop >= 280) {
+  if (document.documentElement.scrollTop >= 530) {
     myNav.classList.add("scroll");
   } else {
     myNav.classList.remove("scroll");
